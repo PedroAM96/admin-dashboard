@@ -1,0 +1,32 @@
+@import '~antd/dist/antd.css';
+
+.ant-layout-header,
+.ant-layout-footer {
+  height: 3rem;
+  color: #fff;
+  background: #d6eedf;
+  padding: 0 1rem;
+}
+[data-theme="dark"] .ant-layout-header {
+  background: #6aa0c7;
+}
+[data-theme="dark"] .ant-layout-footer {
+  background: #6aa0c7;
+}
+.ant-layout-footer {
+  line-height: 1.5;
+}
+header  {
+  .ant-col, .ant-row {
+    height: 3rem;
+  }
+  a.ant-btn {
+      padding-top: 0.4rem!important;
+  }
+  .ant-badge-count, .ant-badge-dot, .ant-badge .ant-scroll-number-custom-component {
+      transform: translate(20%, -20%);
+  }
+  .ant-typography, h3.ant-typography, .ant-btn-link {
+      color: #fff;
+  }
+}

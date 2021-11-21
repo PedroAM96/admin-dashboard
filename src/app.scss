@@ -1,0 +1,87 @@
+@import '~antd/dist/antd.css';
+
+
+.code-box-demo {
+  text-align: center;
+}
+.ant-layout-header,
+.ant-layout-footer {
+  height: 3rem;
+  color: #fff;
+  background: #001529;
+}
+[data-theme="dark"] .ant-layout-header {
+  background: #6aa0c7;
+}
+[data-theme="dark"] .ant-layout-footer {
+  background: #6aa0c7;
+}
+.ant-layout-footer {
+  line-height: 1.5;
+}
+.ant-layout-sider {
+  color: #fff;
+  line-height: 120px;
+  background: #ffffff;
+}
+[data-theme="dark"] .ant-layout-sider {
+  background: #3499ec;
+}
+.ant-layout-content {
+  min-height: 120px;
+  color: #fff;
+  line-height: 120px;
+  background: #f0f2f5;
+}
+[data-theme="dark"] .ant-layout-content {
+  background: #107bcb;
+}
+> .code-box-demo > .ant-layout + .ant-layout {
+  margin-top: 48px;
+}
+.ant-layout-content {
+  margin: 2rem;
+}
+.ant-row {
+  height: fit-content;
+}
+.ant-card {
+  min-height: 172px;
+
+  .ant-card-head {
+    height: 10%;
+    max-height: 48px;
+  }
+  .ant-card-body {
+    height: 100px;
+    padding: 0 12px 0 0;
+    margin: 12px 12px 12px 24px;
+
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .ant-card-body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+  }
+
+  .ant-card-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+  .ant-card-body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+
+  .ant-card-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+
+
+
+
+}
