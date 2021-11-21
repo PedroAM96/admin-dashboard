@@ -33,7 +33,7 @@ export function App() {
                     </Row>
                     <Row style={{ marginTop: 24 }}>
                         <Col span={24}>
-                            <Card style={{ height: 600 }} title="[CORRIGIDO] Bounce não sincronizando" alt="[CORRIGIDO] Bounce não sincronizando" bordered={false}>
+                            <Card style={{ height: 600 }} title="[CORRIGIDO] Bounce não sincronizando" bordered={false}>
                                 Os créditos de Bounce não são devolvidos para os clientes. Quando os envios continuam ocorrendo para um e-mail que deu Bounce, mas não sincronizou, os créditos de envio são consumidos.
                             </Card>
                         </Col>
