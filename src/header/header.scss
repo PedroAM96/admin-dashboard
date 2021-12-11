@@ -1,10 +1,15 @@
 @import '~antd/dist/antd.css';
 
+  $black: #292B39;
+  $gray: #94959C;
+  $light-gray: #D4D4DB;
+  $white: #FFFFFF;
+
 .ant-layout-header,
 .ant-layout-footer {
   height: 3rem;
   color: #fff;
-  background: #095957;
+  background: $black;
   padding: 0 1rem;
 }
 [data-theme="dark"] .ant-layout-header {
@@ -28,5 +33,12 @@ header  {
   }
   .ant-typography, h3.ant-typography, .ant-btn-link {
       color: #fff;
+  }
+
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $white;
   }
 }

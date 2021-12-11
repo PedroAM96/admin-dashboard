@@ -1,7 +1,14 @@
+$black: #292B39;
+$gray: #94959C;
+$light-gray: #D4D4DB;
+$white: #FFFFFF;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 .centralize {

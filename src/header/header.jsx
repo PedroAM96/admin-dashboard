@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import '../styles/global.scss';
 import './header.scss';
-import AvatarIcon from '../../public/avatar.png';
-import RamperLogo from '../../public/ramper.svg';
 import { Avatar, Badge, Button, Col, Image, Layout, Row, Tooltip, Typography } from "antd";
-import { BellOutlined, QuestionCircleOutlined, SearchOutlined } from '@ant-design/icons';
+import { BellOutlined, QuestionCircleOutlined, SearchOutlined, Icon, MehTwoTone, FireTwoTone } from '@ant-design/icons';
 
 const { Text } = Typography;
 const { Header } = Layout;
-const email = 'pedro.angelo@ramper.com.br';
+const email = 'peter.paker@marvel.com';
 const letter = email.slice(0, 1).toUpperCase();
 
 
@@ -18,8 +16,9 @@ export function HeaderComponent() {
     return <>
         <Header>
             <Row>
-                <Col flex="10rem" className="centralize">
-                    <img src={RamperLogo} alt="ramper" style={{ margin: 10, padding: 6 }} />
+                <Col flex="16rem" className="centralize">
+                    <FireTwoTone twoToneColor="#FF007F" high style={{ fontSize: '32px', margin: '5px' }} />
+                    <div className="title"> admin dashboard </div>
                 </Col>
                 <Col flex="auto">
                     <Row justify="end">
@@ -33,7 +32,7 @@ export function HeaderComponent() {
                                 <Button
                                     className="centralize"
                                     type='link'
-                                    href="https://basedeconhecimento.ramper.com.br/en/"
+                                    href="https://github.com/PedroAM96/admin-dashboard/"
                                     target="_blank"
                                     icon={<QuestionCircleOutlined />}
                                     size="medium"
@@ -48,9 +47,7 @@ export function HeaderComponent() {
                             </Tooltip>
                         </Col>
                         <Col flex="10rem" className="centralize">
-                            <Avatar src={AvatarIcon} alt="avatar" style={{ margin: 10, padding: 3 }}>
-                                {letter}
-                            </Avatar>
+                            <MehTwoTone twoToneColor="#FF007F" alt="Avatar" style={{ margin: 10, padding: 3 }} />
                             <Text
                                 style={ellipsis ? { width: 100 } : undefined}
                                 ellipsis={ellipsis ? { tooltip: email } : false}
